@@ -32,4 +32,6 @@ function matchInValue(numberArray){
     return coincidencia
 }
 
-module.exports.verifyNumber = verifyNumber;
+module.exports = {
+    verifyNumber
+}

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1631984221896" clover="3.2.0">
-  <project timestamp="1631984221896" name="All files">
+<coverage generated="1633184859112" clover="3.2.0">
+  <project timestamp="1633184859113" name="All files">
     <metrics statements="19" coveredstatements="19" conditionals="6" coveredconditionals="6" methods="6" coveredmethods="6" elements="31" coveredelements="31" complexity="0" loc="19" ncloc="19" packages="1" files="1" classes="1"/>
-    <file name="code-breaker.js" path="/home/juan/Desktop/Empresariales/pruebas/code-breaker/code-breaker.js">
+    <file name="utils-code-breaker.js" path="C:\Users\Juan Gutierrez\Downloads\dojo-jest\helpers\utils-code-breaker.js">
       <metrics statements="19" coveredstatements="19" conditionals="6" coveredconditionals="6" methods="6" coveredmethods="6"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
