@@ -1,4 +1,10 @@
-const SECRET = '1234';
+const fs = require('fs');
+
+let rawdata = fs.readFileSync('secret.json');
+let secretJSON = JSON.parse(rawdata);
+
+// const SECRET = '1234';
+const SECRET = secretJSON.secret;
 var secretArray = SECRET.split('');
 
 function verifyNumber(number) {

@@ -1,6 +1,7 @@
 const { response, request } = require('express');
 
 const { verifyNumber } = require('../helpers/utils-code-breaker');
+const fs = require('fs');
 
 const validateNumber = (req = request, res = response) => {
 
@@ -14,6 +15,23 @@ const validateNumber = (req = request, res = response) => {
     });
 }
 
+
+const restartGame = (req = request, res = response) => {
+
+    const randomNumber = Math.floor(Math.random()*8999)+1000;
+    const stringRandomNumber = randomNumber.toString();
+
+    let secret = { secret: stringRandomNumber };
+
+    let data = JSON.stringify(secret);
+    fs.writeFileSync('secret.json', data);   
+
+    res.status(200).json({
+        ok: true
+    });
+}
+
 module.exports = {
-    validateNumber
+    validateNumber,
+    restartGame
 }
