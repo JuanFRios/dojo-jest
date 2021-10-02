@@ -27,7 +27,8 @@ const restartGame = (req = request, res = response) => {
     fs.writeFileSync('secret.json', data);   
 
     res.status(200).json({
-        ok: true
+        ok: true, 
+        stringRandomNumber
     });
 }
 
